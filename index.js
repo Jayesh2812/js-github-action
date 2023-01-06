@@ -1,5 +1,14 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+const testFolder = './';
+const fs = require('fs');
+
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});
+
 
 try {
   // `who-to-greet` input defined in action metadata file

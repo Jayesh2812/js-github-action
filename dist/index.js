@@ -9686,6 +9686,15 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(8534);
 const github = __nccwpck_require__(1682);
+const testFolder = './';
+const fs = __nccwpck_require__(7147);
+
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});
+
 
 try {
   // `who-to-greet` input defined in action metadata file
