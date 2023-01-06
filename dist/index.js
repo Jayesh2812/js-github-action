@@ -9689,10 +9689,9 @@ const github = __nccwpck_require__(1682);
 const fs = __nccwpck_require__(7147);
 
 try {
-  fs.readdir(".", (err, files) => {
-    files.forEach((file) => {
-      console.log("File", file);
-    });
+  console.log("FILESSSSS")
+  fs.readdirSync('.').forEach(file => {
+    console.log(file);
   });
 
   // `who-to-greet` input defined in action metadata file

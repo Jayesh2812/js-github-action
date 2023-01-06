@@ -3,10 +3,9 @@ const github = require("@actions/github");
 const fs = require("fs");
 
 try {
-  fs.readdir(".", (err, files) => {
-    files.forEach((file) => {
-      console.log("File", file);
-    });
+  console.log("FILESSSSS")
+  fs.readdirSync('.').forEach(file => {
+    console.log(file);
   });
 
   // `who-to-greet` input defined in action metadata file
